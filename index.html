@@ -206,15 +206,12 @@
     </footer>
 
     <script>
-        // --- FECHA CONFIGURADA: 21 de febrero de 2025 a las 14:30 ---
-        // Para que el 21 de febrero de 2026 a las 14:30 marque exactamente 365 días.
         const startDate = new Date('2025-02-21T14:30:00'); 
 
         function updateCountdown() {
             const now = new Date();
             const diff = now - startDate;
 
-            // Manejo si la fecha actual es anterior a la de inicio
             const absoluteDiff = Math.abs(diff);
 
             const d = Math.floor(absoluteDiff / (1000 * 60 * 60 * 24));
@@ -320,4 +317,5 @@
     </script>
 </body>
 </html>
+
 
